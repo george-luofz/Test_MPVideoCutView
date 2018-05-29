@@ -10,6 +10,7 @@
 		3C72615920BBF6FC00472CC4 /* YXVSCaptureBorderRectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C72615820BBF6FC00472CC4 /* YXVSCaptureBorderRectView.m */; };
 		3C72615C20BC02FD00472CC4 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C72615B20BC02FD00472CC4 /* TestViewController.m */; };
 		3C72616420BCFFF000472CC4 /* YXVSCaptureVideoViewContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C72616320BCFFF000472CC4 /* YXVSCaptureVideoViewContainer.m */; };
+		3C72616720BD620200472CC4 /* YXVSEditRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C72616620BD620200472CC4 /* YXVSEditRootViewController.m */; };
 		3CA1306720B811A500CAE3C2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CA1306620B811A500CAE3C2 /* AppDelegate.m */; };
 		3CA1306A20B811A500CAE3C2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CA1306920B811A500CAE3C2 /* ViewController.m */; };
 		3CA1306D20B811A500CAE3C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CA1306B20B811A500CAE3C2 /* Main.storyboard */; };
@@ -26,6 +27,8 @@
 		3C72615B20BC02FD00472CC4 /* TestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 		3C72616220BCFFF000472CC4 /* YXVSCaptureVideoViewContainer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXVSCaptureVideoViewContainer.h; sourceTree = "<group>"; };
 		3C72616320BCFFF000472CC4 /* YXVSCaptureVideoViewContainer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXVSCaptureVideoViewContainer.m; sourceTree = "<group>"; };
+		3C72616520BD620200472CC4 /* YXVSEditRootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXVSEditRootViewController.h; sourceTree = "<group>"; };
+		3C72616620BD620200472CC4 /* YXVSEditRootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXVSEditRootViewController.m; sourceTree = "<group>"; };
 		3CA1306220B811A500CAE3C2 /* Test_MPVideoCutView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test_MPVideoCutView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CA1306520B811A500CAE3C2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3CA1306620B811A500CAE3C2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -87,6 +90,8 @@
 				3C72615B20BC02FD00472CC4 /* TestViewController.m */,
 				3C72616220BCFFF000472CC4 /* YXVSCaptureVideoViewContainer.h */,
 				3C72616320BCFFF000472CC4 /* YXVSCaptureVideoViewContainer.m */,
+				3C72616520BD620200472CC4 /* YXVSEditRootViewController.h */,
+				3C72616620BD620200472CC4 /* YXVSEditRootViewController.m */,
 			);
 			path = Test_MPVideoCutView;
 			sourceTree = "<group>";
@@ -163,6 +168,7 @@
 			files = (
 				3C72615C20BC02FD00472CC4 /* TestViewController.m in Sources */,
 				3CA1307D20B811D700CAE3C2 /* MPFCaptureShangChuanVideoMeiHuaCaiJianView.m in Sources */,
+				3C72616720BD620200472CC4 /* YXVSEditRootViewController.m in Sources */,
 				3CA1306A20B811A500CAE3C2 /* ViewController.m in Sources */,
 				3CA1307520B811A700CAE3C2 /* main.m in Sources */,
 				3C72616420BCFFF000472CC4 /* YXVSCaptureVideoViewContainer.m in Sources */,

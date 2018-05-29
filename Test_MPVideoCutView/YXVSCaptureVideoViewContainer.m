@@ -59,8 +59,8 @@
     [_scrollView addSubview:imgViewContainer];
     _imgViewContainer = imgViewContainer;
     
-    return;
     YXVSCaptureBorderRectView *captureBorderView = [[YXVSCaptureBorderRectView alloc] initWithFrame:[self _caculateCaptureBorderViewFrame]];
+    captureBorderView.backgroundColor = [UIColor clearColor];
     captureBorderView.longPressDelegate = self;
     [_scrollView addSubview:captureBorderView];
     _captureBorderView = captureBorderView;
@@ -90,6 +90,9 @@
     CGFloat width = view.originalWidth-x; //宽度要变窄，应该是原始宽度减才对
     CGRect frame = CGRectMake(x, view.frame.origin.y, width, view.frame.size.height);
     view.frame = frame;
+    
+    // 3.更改_imgViewContainer frame
+    
 }
 
 - (void)YXVSCaptureBorderRectView:(YXVSCaptureBorderRectView *)view rightBtnLongPressed:(UILongPressGestureRecognizer *)longPressGesture{
@@ -98,7 +101,10 @@
     
     CGPoint point = [longPressGesture locationInView:view.superview];
     CGFloat width = point.x;
-    CGRect frame = CGRectMake(0, view.frame.origin.y, width, view.frame.size.height);
+    CGRect frame = CGRectMake(view.frame.origin.x, view.frame.origin.y, width, view.frame.size.height);
     view.frame = frame;
+    
+    // 3.更改_imgViewContainer frame，实现裁剪效果
+//    _imgViewContainer.frame = CGRectMake(_imgViewContainer.frame.origin.x, _imgViewContainer.frame.origin.y, width, _imgViewContainer.frame.size.height);
 }
 @end
