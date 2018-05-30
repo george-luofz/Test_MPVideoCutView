@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface YXVSEditRootViewController : UIViewController
-
+- (instancetype)initWithVideoUrl:(NSURL *)url NS_DESIGNATED_INITIALIZER;
 @end
