@@ -19,6 +19,13 @@
     return manager;
 }
 
+- (PHFetchResult *)allVideos{
+    PHFetchOptions *options = [[PHFetchOptions alloc]init];
+    options.predicate = [NSPredicate predicateWithFormat:@"mediaType in %@",@[@(PHAssetMediaTypeVideo)]];
+    options.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:@"creationDate" ascending:YES]];
+    return [PHAsset fetchAssetsWithOptions:options];
+}
+
 - (void)allVideoGroupInfo:(PhotoKitAllGrougsBlock)allGrougsInfo{
     
     self.assetCollections = [NSMutableArray array];
@@ -36,16 +43,24 @@
 - (void)obtainAllAssetCollectionWithPHFetchResult:(NSArray *)resultAlbums allGrougsInfo:(PhotoKitAllGrougsBlock)allGrougsInfo{
     for (PHFetchResult *result in resultAlbums) {
         for (PHCollection *collection in result) {
+            
             if ([collection isKindOfClass:[PHAssetCollection class]]) {
                 PHAssetCollection *assetCollection = (PHAssetCollection *)collection;
                 PHFetchResult *result = [self theFetchResultVideoInAssetCollection:assetCollection];
                 if(result.count){
-                    [self.assetCollections addObject:assetCollection];
+                    // 支持中英文
+                    if([assetCollection.localizedTitle isEqualToString:@"Camera Roll"] || [assetCollection.localizedTitle isEqualToString:@"相机胶卷"]){
+                        [self.assetCollections insertObject:assetCollection atIndex:0];
+                    }else{
+                        [self.assetCollections addObject:assetCollection];
+                    }
                 }
             }
         }
     }
-    allGrougsInfo(self.assetCollections);
+    dispatch_async(dispatch_get_main_queue(), ^{
+        allGrougsInfo(self.assetCollections);
+    });
 }
 
 - (PHFetchResult *)theFetchResultVideoInAssetCollection:(PHAssetCollection *)assetCollection{
@@ -68,7 +83,9 @@
     
     PHAsset *asset = fetchResult[0];
     [manger requestImageForAsset:asset targetSize:CGSizeMake(150, 150) contentMode:PHImageContentModeAspectFill options:nil resultHandler:^(UIImage * _Nullable result, NSDictionary * _Nullable info) {
-        PHImageInfo(result,asset);
+        dispatch_async(dispatch_get_main_queue(), ^{
+            PHImageInfo(result,asset);
+        });
     }];
 }
 
@@ -76,13 +93,12 @@
 - (void)thePhotoInPHAsset:(PHAsset *)asset targetSize:(CGSize)targetSize PHImageInfo:(PHImageBlock)PHImageInfo{
     PHImageManager *manger = [PHImageManager defaultManager];
     PHImageRequestOptions * options = [[PHImageRequestOptions alloc] init];
-    options.deliveryMode = PHImageRequestOptionsDeliveryModeFastFormat;
-    options.resizeMode = PHImageRequestOptionsResizeModeFast;
-    options.networkAccessAllowed = NO;
+    options.deliveryMode = PHImageRequestOptionsDeliveryModeHighQualityFormat;
     
     [manger requestImageForAsset:asset targetSize:targetSize contentMode:PHImageContentModeAspectFill options:options resultHandler:^(UIImage * _Nullable result, NSDictionary * _Nullable info) {
-        PHImageInfo(result,asset);
+        dispatch_async(dispatch_get_main_queue(), ^{
+            PHImageInfo(result,asset);
+        });
     }];
 }
-
 @end

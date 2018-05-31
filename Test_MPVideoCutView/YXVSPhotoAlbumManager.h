@@ -20,6 +20,8 @@ typedef void(^PHICloudBlock)(NSNumber *isICloud);
 + (instancetype)sharedInstance;
 
 #pragma mark -- for YXVS
+// 默认相册里的所有视频
+- (PHFetchResult *)allVideos;
 
 // 获取所有视频相册分组
 - (void)allVideoGroupInfo:(PhotoKitAllGrougsBlock)allGrougsInfo;

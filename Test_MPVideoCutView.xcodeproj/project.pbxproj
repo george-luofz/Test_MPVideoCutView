@@ -22,6 +22,11 @@
 		3CA1307520B811A700CAE3C2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CA1307420B811A700CAE3C2 /* main.m */; };
 		3CA1307D20B811D700CAE3C2 /* MPFCaptureShangChuanVideoMeiHuaCaiJianView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CA1307C20B811D700CAE3C2 /* MPFCaptureShangChuanVideoMeiHuaCaiJianView.m */; };
 		3CE4D67420BEA5600038ED71 /* YXVSPhotoAlbumManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE4D67320BEA5600038ED71 /* YXVSPhotoAlbumManager.m */; };
+		3CE4D67920BF89610038ED71 /* YXVSPhotoPickerGroupList.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE4D67820BF89610038ED71 /* YXVSPhotoPickerGroupList.m */; };
+		3CE4D67C20BF8A370038ED71 /* YXVSPhotoPickerGroupListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE4D67B20BF8A370038ED71 /* YXVSPhotoPickerGroupListCell.m */; };
+		3CE4D68220BF99330038ED71 /* YXPhotoPickerAssetPreviewList.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE4D68120BF99330038ED71 /* YXPhotoPickerAssetPreviewList.m */; };
+		3CE4D68520BF9A0F0038ED71 /* YXPhotoPickerAssetPreviewListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE4D68420BF9A0F0038ED71 /* YXPhotoPickerAssetPreviewListCell.m */; };
+		3CE4D68A20BFD6060038ED71 /* YXVSPhotoPickerTopSwitchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE4D68920BFD6060038ED71 /* YXVSPhotoPickerTopSwitchView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +57,18 @@
 		3CA1307C20B811D700CAE3C2 /* MPFCaptureShangChuanVideoMeiHuaCaiJianView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPFCaptureShangChuanVideoMeiHuaCaiJianView.m; sourceTree = "<group>"; };
 		3CE4D67220BEA5600038ED71 /* YXVSPhotoAlbumManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXVSPhotoAlbumManager.h; sourceTree = "<group>"; };
 		3CE4D67320BEA5600038ED71 /* YXVSPhotoAlbumManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXVSPhotoAlbumManager.m; sourceTree = "<group>"; };
+		3CE4D67720BF89610038ED71 /* YXVSPhotoPickerGroupList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXVSPhotoPickerGroupList.h; sourceTree = "<group>"; };
+		3CE4D67820BF89610038ED71 /* YXVSPhotoPickerGroupList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXVSPhotoPickerGroupList.m; sourceTree = "<group>"; };
+		3CE4D67A20BF8A370038ED71 /* YXVSPhotoPickerGroupListCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXVSPhotoPickerGroupListCell.h; sourceTree = "<group>"; };
+		3CE4D67B20BF8A370038ED71 /* YXVSPhotoPickerGroupListCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXVSPhotoPickerGroupListCell.m; sourceTree = "<group>"; };
+		3CE4D68020BF99330038ED71 /* YXPhotoPickerAssetPreviewList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXPhotoPickerAssetPreviewList.h; sourceTree = "<group>"; };
+		3CE4D68120BF99330038ED71 /* YXPhotoPickerAssetPreviewList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXPhotoPickerAssetPreviewList.m; sourceTree = "<group>"; };
+		3CE4D68320BF9A0F0038ED71 /* YXPhotoPickerAssetPreviewListCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXPhotoPickerAssetPreviewListCell.h; sourceTree = "<group>"; };
+		3CE4D68420BF9A0F0038ED71 /* YXPhotoPickerAssetPreviewListCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXPhotoPickerAssetPreviewListCell.m; sourceTree = "<group>"; };
+		3CE4D68820BFD6060038ED71 /* YXVSPhotoPickerTopSwitchView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXVSPhotoPickerTopSwitchView.h; sourceTree = "<group>"; };
+		3CE4D68920BFD6060038ED71 /* YXVSPhotoPickerTopSwitchView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXVSPhotoPickerTopSwitchView.m; sourceTree = "<group>"; };
+		3CE4D68B20BFE8FF0038ED71 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		3CE4D68C20BFE8FF0038ED71 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +101,7 @@
 		3CA1306420B811A500CAE3C2 /* Test_MPVideoCutView */ = {
 			isa = PBXGroup;
 			children = (
+				3CE4D67520BF84640038ED71 /* YXVSPhotoPicker */,
 				3C72616820BE426600472CC4 /* nianhui.mp4 */,
 				3CA1307B20B811D600CAE3C2 /* MPFCaptureShangChuanVideoMeiHuaCaiJianView.h */,
 				3CA1307C20B811D700CAE3C2 /* MPFCaptureShangChuanVideoMeiHuaCaiJianView.m */,
@@ -112,6 +130,31 @@
 				3CE4D67320BEA5600038ED71 /* YXVSPhotoAlbumManager.m */,
 			);
 			path = Test_MPVideoCutView;
+			sourceTree = "<group>";
+		};
+		3CE4D67520BF84640038ED71 /* YXVSPhotoPicker */ = {
+			isa = PBXGroup;
+			children = (
+				3CE4D67620BF84790038ED71 /* view */,
+			);
+			path = YXVSPhotoPicker;
+			sourceTree = "<group>";
+		};
+		3CE4D67620BF84790038ED71 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				3CE4D67720BF89610038ED71 /* YXVSPhotoPickerGroupList.h */,
+				3CE4D67820BF89610038ED71 /* YXVSPhotoPickerGroupList.m */,
+				3CE4D67A20BF8A370038ED71 /* YXVSPhotoPickerGroupListCell.h */,
+				3CE4D67B20BF8A370038ED71 /* YXVSPhotoPickerGroupListCell.m */,
+				3CE4D68020BF99330038ED71 /* YXPhotoPickerAssetPreviewList.h */,
+				3CE4D68120BF99330038ED71 /* YXPhotoPickerAssetPreviewList.m */,
+				3CE4D68320BF9A0F0038ED71 /* YXPhotoPickerAssetPreviewListCell.h */,
+				3CE4D68420BF9A0F0038ED71 /* YXPhotoPickerAssetPreviewListCell.m */,
+				3CE4D68820BFD6060038ED71 /* YXVSPhotoPickerTopSwitchView.h */,
+				3CE4D68920BFD6060038ED71 /* YXVSPhotoPickerTopSwitchView.m */,
+			);
+			path = view;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -186,14 +229,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C72615C20BC02FD00472CC4 /* TestViewController.m in Sources */,
+				3CE4D68220BF99330038ED71 /* YXPhotoPickerAssetPreviewList.m in Sources */,
 				3C72616C20BE53C500472CC4 /* YXVSPhotoPickerVideoController.m in Sources */,
 				3CE4D67420BEA5600038ED71 /* YXVSPhotoAlbumManager.m in Sources */,
 				3CA1307D20B811D700CAE3C2 /* MPFCaptureShangChuanVideoMeiHuaCaiJianView.m in Sources */,
 				3C72616720BD620200472CC4 /* YXVSEditRootViewController.m in Sources */,
 				3CA1306A20B811A500CAE3C2 /* ViewController.m in Sources */,
 				3CA1307520B811A700CAE3C2 /* main.m in Sources */,
+				3CE4D67C20BF8A370038ED71 /* YXVSPhotoPickerGroupListCell.m in Sources */,
 				3C72616420BCFFF000472CC4 /* YXVSCaptureVideoViewContainer.m in Sources */,
+				3CE4D67920BF89610038ED71 /* YXVSPhotoPickerGroupList.m in Sources */,
+				3CE4D68A20BFD6060038ED71 /* YXVSPhotoPickerTopSwitchView.m in Sources */,
 				3C72615920BBF6FC00472CC4 /* YXVSCaptureBorderRectView.m in Sources */,
+				3CE4D68520BF9A0F0038ED71 /* YXPhotoPickerAssetPreviewListCell.m in Sources */,
 				3CA1306720B811A500CAE3C2 /* AppDelegate.m in Sources */,
 				3C72616F20BE53D800472CC4 /* YXVSPhotoPickerBeiginViewController.m in Sources */,
 			);
@@ -206,6 +254,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				3CA1306C20B811A500CAE3C2 /* Base */,
+				3CE4D68B20BFE8FF0038ED71 /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -214,6 +263,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				3CA1307120B811A700CAE3C2 /* Base */,
+				3CE4D68C20BFE8FF0038ED71 /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -225,6 +275,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -283,6 +334,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
