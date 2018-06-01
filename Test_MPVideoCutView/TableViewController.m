@@ -11,6 +11,8 @@
 #import "YXVSPhotoPickerBeiginViewController.h"
 #import "YXVSVideoEditViewController.h"
 
+#import "VSVideoClicpTestController.h"
+
 @interface TableViewController ()
 {
     NSArray *_dataSource;
@@ -52,7 +54,7 @@
     }else if (indexPath.row == 1){
         vc = [YXVSPhotoPickerBeiginViewController new];
     }else if (indexPath.row == 2){
-        vc = [YXVSVideoEditViewController new];
+        vc = [VSVideoClicpTestController new];
     }
     [self.navigationController pushViewController:vc animated:YES];
 }

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C14C8AB20C1D612008BC371 /* VSVideoClicpViewHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C14C8AA20C1D612008BC371 /* VSVideoClicpViewHandler.m */; };
+		3C14C8B120C1DBA7008BC371 /* VSVideoClicpHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C14C8B020C1DBA7008BC371 /* VSVideoClicpHeaderView.m */; };
+		3C14C8B420C1E2EC008BC371 /* VSVideoClicpTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C14C8B320C1E2EC008BC371 /* VSVideoClicpTestController.m */; };
+		3C14C8B720C1E772008BC371 /* VSVideoClicpBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C14C8B620C1E772008BC371 /* VSVideoClicpBottomView.m */; };
 		3C4E665620C14BE100D79B4A /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C4E665520C14BE100D79B4A /* TableViewController.m */; };
 		3C72615920BBF6FC00472CC4 /* YXVSCaptureBorderRectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C72615820BBF6FC00472CC4 /* YXVSCaptureBorderRectView.m */; };
 		3C72616420BCFFF000472CC4 /* YXVSCaptureVideoViewContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C72616320BCFFF000472CC4 /* YXVSCaptureVideoViewContainer.m */; };
@@ -30,6 +34,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3C14C8A920C1D612008BC371 /* VSVideoClicpViewHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VSVideoClicpViewHandler.h; sourceTree = "<group>"; };
+		3C14C8AA20C1D612008BC371 /* VSVideoClicpViewHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VSVideoClicpViewHandler.m; sourceTree = "<group>"; };
+		3C14C8AF20C1DBA7008BC371 /* VSVideoClicpHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VSVideoClicpHeaderView.h; sourceTree = "<group>"; };
+		3C14C8B020C1DBA7008BC371 /* VSVideoClicpHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VSVideoClicpHeaderView.m; sourceTree = "<group>"; };
+		3C14C8B220C1E2EC008BC371 /* VSVideoClicpTestController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VSVideoClicpTestController.h; sourceTree = "<group>"; };
+		3C14C8B320C1E2EC008BC371 /* VSVideoClicpTestController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VSVideoClicpTestController.m; sourceTree = "<group>"; };
+		3C14C8B520C1E772008BC371 /* VSVideoClicpBottomView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VSVideoClicpBottomView.h; sourceTree = "<group>"; };
+		3C14C8B620C1E772008BC371 /* VSVideoClicpBottomView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VSVideoClicpBottomView.m; sourceTree = "<group>"; };
 		3C4E665420C14BE100D79B4A /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
 		3C4E665520C14BE100D79B4A /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 		3C72615720BBF6FC00472CC4 /* YXVSCaptureBorderRectView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXVSCaptureBorderRectView.h; sourceTree = "<group>"; };
@@ -82,6 +94,51 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C14C8AC20C1DAC4008BC371 /* videoEdit */ = {
+			isa = PBXGroup;
+			children = (
+				3C72616520BD620200472CC4 /* YXVSEditRootViewController.h */,
+				3C72616620BD620200472CC4 /* YXVSEditRootViewController.m */,
+			);
+			path = videoEdit;
+			sourceTree = "<group>";
+		};
+		3C14C8AD20C1DAE3008BC371 /* videoClicp */ = {
+			isa = PBXGroup;
+			children = (
+				3C14C8AE20C1DB86008BC371 /* view */,
+				3CE4D69220BFEEF40038ED71 /* YXVSVideoEditViewController.h */,
+				3CE4D69320BFEEF40038ED71 /* YXVSVideoEditViewController.m */,
+				3C72615720BBF6FC00472CC4 /* YXVSCaptureBorderRectView.h */,
+				3C72615820BBF6FC00472CC4 /* YXVSCaptureBorderRectView.m */,
+				3C72616220BCFFF000472CC4 /* YXVSCaptureVideoViewContainer.h */,
+				3C72616320BCFFF000472CC4 /* YXVSCaptureVideoViewContainer.m */,
+				3C14C8B220C1E2EC008BC371 /* VSVideoClicpTestController.h */,
+				3C14C8B320C1E2EC008BC371 /* VSVideoClicpTestController.m */,
+			);
+			path = videoClicp;
+			sourceTree = "<group>";
+		};
+		3C14C8AE20C1DB86008BC371 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				3C14C8A920C1D612008BC371 /* VSVideoClicpViewHandler.h */,
+				3C14C8AA20C1D612008BC371 /* VSVideoClicpViewHandler.m */,
+				3C14C8B520C1E772008BC371 /* VSVideoClicpBottomView.h */,
+				3C14C8B620C1E772008BC371 /* VSVideoClicpBottomView.m */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		3C14C8B820C1EA14008BC371 /* temp */ = {
+			isa = PBXGroup;
+			children = (
+				3C14C8AF20C1DBA7008BC371 /* VSVideoClicpHeaderView.h */,
+				3C14C8B020C1DBA7008BC371 /* VSVideoClicpHeaderView.m */,
+			);
+			path = temp;
+			sourceTree = "<group>";
+		};
 		3CA1305920B811A500CAE3C2 = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +158,9 @@
 		3CA1306420B811A500CAE3C2 /* Test_MPVideoCutView */ = {
 			isa = PBXGroup;
 			children = (
+				3C14C8B820C1EA14008BC371 /* temp */,
+				3C14C8AD20C1DAE3008BC371 /* videoClicp */,
+				3C14C8AC20C1DAC4008BC371 /* videoEdit */,
 				3CE4D67520BF84640038ED71 /* YXVSPhotoPicker */,
 				3C72616820BE426600472CC4 /* nianhui.mp4 */,
 				3CA1307B20B811D600CAE3C2 /* MPFCaptureShangChuanVideoMeiHuaCaiJianView.h */,
@@ -114,10 +174,6 @@
 				3CA1307020B811A700CAE3C2 /* LaunchScreen.storyboard */,
 				3CA1307320B811A700CAE3C2 /* Info.plist */,
 				3CA1307420B811A700CAE3C2 /* main.m */,
-				3C72615720BBF6FC00472CC4 /* YXVSCaptureBorderRectView.h */,
-				3C72615820BBF6FC00472CC4 /* YXVSCaptureBorderRectView.m */,
-				3C72616220BCFFF000472CC4 /* YXVSCaptureVideoViewContainer.h */,
-				3C72616320BCFFF000472CC4 /* YXVSCaptureVideoViewContainer.m */,
 				3C4E665420C14BE100D79B4A /* TableViewController.h */,
 				3C4E665520C14BE100D79B4A /* TableViewController.m */,
 			);
@@ -154,12 +210,8 @@
 		3CE4D68D20BFED2D0038ED71 /* controller */ = {
 			isa = PBXGroup;
 			children = (
-				3C72616520BD620200472CC4 /* YXVSEditRootViewController.h */,
-				3C72616620BD620200472CC4 /* YXVSEditRootViewController.m */,
 				3C72616D20BE53D800472CC4 /* YXVSPhotoPickerBeiginViewController.h */,
 				3C72616E20BE53D800472CC4 /* YXVSPhotoPickerBeiginViewController.m */,
-				3CE4D69220BFEEF40038ED71 /* YXVSVideoEditViewController.h */,
-				3CE4D69320BFEEF40038ED71 /* YXVSVideoEditViewController.m */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -250,8 +302,12 @@
 				3CA1307D20B811D700CAE3C2 /* MPFCaptureShangChuanVideoMeiHuaCaiJianView.m in Sources */,
 				3C72616720BD620200472CC4 /* YXVSEditRootViewController.m in Sources */,
 				3CA1306A20B811A500CAE3C2 /* ViewController.m in Sources */,
+				3C14C8B720C1E772008BC371 /* VSVideoClicpBottomView.m in Sources */,
+				3C14C8B420C1E2EC008BC371 /* VSVideoClicpTestController.m in Sources */,
+				3C14C8B120C1DBA7008BC371 /* VSVideoClicpHeaderView.m in Sources */,
 				3CA1307520B811A700CAE3C2 /* main.m in Sources */,
 				3CE4D69420BFEEF40038ED71 /* YXVSVideoEditViewController.m in Sources */,
+				3C14C8AB20C1D612008BC371 /* VSVideoClicpViewHandler.m in Sources */,
 				3CE4D67C20BF8A370038ED71 /* YXVSPhotoPickerGroupListCell.m in Sources */,
 				3C72616420BCFFF000472CC4 /* YXVSCaptureVideoViewContainer.m in Sources */,
 				3CE4D67920BF89610038ED71 /* YXVSPhotoPickerGroupList.m in Sources */,
