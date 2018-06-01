@@ -7,12 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C4E665620C14BE100D79B4A /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C4E665520C14BE100D79B4A /* TableViewController.m */; };
 		3C72615920BBF6FC00472CC4 /* YXVSCaptureBorderRectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C72615820BBF6FC00472CC4 /* YXVSCaptureBorderRectView.m */; };
-		3C72615C20BC02FD00472CC4 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C72615B20BC02FD00472CC4 /* TestViewController.m */; };
 		3C72616420BCFFF000472CC4 /* YXVSCaptureVideoViewContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C72616320BCFFF000472CC4 /* YXVSCaptureVideoViewContainer.m */; };
 		3C72616720BD620200472CC4 /* YXVSEditRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C72616620BD620200472CC4 /* YXVSEditRootViewController.m */; };
 		3C72616920BE426600472CC4 /* nianhui.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 3C72616820BE426600472CC4 /* nianhui.mp4 */; };
-		3C72616C20BE53C500472CC4 /* YXVSPhotoPickerVideoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C72616B20BE53C500472CC4 /* YXVSPhotoPickerVideoController.m */; };
 		3C72616F20BE53D800472CC4 /* YXVSPhotoPickerBeiginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C72616E20BE53D800472CC4 /* YXVSPhotoPickerBeiginViewController.m */; };
 		3CA1306720B811A500CAE3C2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CA1306620B811A500CAE3C2 /* AppDelegate.m */; };
 		3CA1306A20B811A500CAE3C2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CA1306920B811A500CAE3C2 /* ViewController.m */; };
@@ -27,20 +26,19 @@
 		3CE4D68220BF99330038ED71 /* YXPhotoPickerAssetPreviewList.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE4D68120BF99330038ED71 /* YXPhotoPickerAssetPreviewList.m */; };
 		3CE4D68520BF9A0F0038ED71 /* YXPhotoPickerAssetPreviewListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE4D68420BF9A0F0038ED71 /* YXPhotoPickerAssetPreviewListCell.m */; };
 		3CE4D68A20BFD6060038ED71 /* YXVSPhotoPickerTopSwitchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE4D68920BFD6060038ED71 /* YXVSPhotoPickerTopSwitchView.m */; };
+		3CE4D69420BFEEF40038ED71 /* YXVSVideoEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE4D69320BFEEF40038ED71 /* YXVSVideoEditViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3C4E665420C14BE100D79B4A /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		3C4E665520C14BE100D79B4A /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 		3C72615720BBF6FC00472CC4 /* YXVSCaptureBorderRectView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXVSCaptureBorderRectView.h; sourceTree = "<group>"; };
 		3C72615820BBF6FC00472CC4 /* YXVSCaptureBorderRectView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXVSCaptureBorderRectView.m; sourceTree = "<group>"; };
-		3C72615A20BC02FD00472CC4 /* TestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
-		3C72615B20BC02FD00472CC4 /* TestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 		3C72616220BCFFF000472CC4 /* YXVSCaptureVideoViewContainer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXVSCaptureVideoViewContainer.h; sourceTree = "<group>"; };
 		3C72616320BCFFF000472CC4 /* YXVSCaptureVideoViewContainer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXVSCaptureVideoViewContainer.m; sourceTree = "<group>"; };
 		3C72616520BD620200472CC4 /* YXVSEditRootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXVSEditRootViewController.h; sourceTree = "<group>"; };
 		3C72616620BD620200472CC4 /* YXVSEditRootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXVSEditRootViewController.m; sourceTree = "<group>"; };
 		3C72616820BE426600472CC4 /* nianhui.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = nianhui.mp4; sourceTree = "<group>"; };
-		3C72616A20BE53C500472CC4 /* YXVSPhotoPickerVideoController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXVSPhotoPickerVideoController.h; sourceTree = "<group>"; };
-		3C72616B20BE53C500472CC4 /* YXVSPhotoPickerVideoController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXVSPhotoPickerVideoController.m; sourceTree = "<group>"; };
 		3C72616D20BE53D800472CC4 /* YXVSPhotoPickerBeiginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXVSPhotoPickerBeiginViewController.h; sourceTree = "<group>"; };
 		3C72616E20BE53D800472CC4 /* YXVSPhotoPickerBeiginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXVSPhotoPickerBeiginViewController.m; sourceTree = "<group>"; };
 		3CA1306220B811A500CAE3C2 /* Test_MPVideoCutView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test_MPVideoCutView.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -69,6 +67,8 @@
 		3CE4D68920BFD6060038ED71 /* YXVSPhotoPickerTopSwitchView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXVSPhotoPickerTopSwitchView.m; sourceTree = "<group>"; };
 		3CE4D68B20BFE8FF0038ED71 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		3CE4D68C20BFE8FF0038ED71 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		3CE4D69220BFEEF40038ED71 /* YXVSVideoEditViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXVSVideoEditViewController.h; sourceTree = "<group>"; };
+		3CE4D69320BFEEF40038ED71 /* YXVSVideoEditViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXVSVideoEditViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,20 +114,12 @@
 				3CA1307020B811A700CAE3C2 /* LaunchScreen.storyboard */,
 				3CA1307320B811A700CAE3C2 /* Info.plist */,
 				3CA1307420B811A700CAE3C2 /* main.m */,
-				3C72615A20BC02FD00472CC4 /* TestViewController.h */,
-				3C72615B20BC02FD00472CC4 /* TestViewController.m */,
 				3C72615720BBF6FC00472CC4 /* YXVSCaptureBorderRectView.h */,
 				3C72615820BBF6FC00472CC4 /* YXVSCaptureBorderRectView.m */,
 				3C72616220BCFFF000472CC4 /* YXVSCaptureVideoViewContainer.h */,
 				3C72616320BCFFF000472CC4 /* YXVSCaptureVideoViewContainer.m */,
-				3C72616520BD620200472CC4 /* YXVSEditRootViewController.h */,
-				3C72616620BD620200472CC4 /* YXVSEditRootViewController.m */,
-				3C72616A20BE53C500472CC4 /* YXVSPhotoPickerVideoController.h */,
-				3C72616B20BE53C500472CC4 /* YXVSPhotoPickerVideoController.m */,
-				3C72616D20BE53D800472CC4 /* YXVSPhotoPickerBeiginViewController.h */,
-				3C72616E20BE53D800472CC4 /* YXVSPhotoPickerBeiginViewController.m */,
-				3CE4D67220BEA5600038ED71 /* YXVSPhotoAlbumManager.h */,
-				3CE4D67320BEA5600038ED71 /* YXVSPhotoAlbumManager.m */,
+				3C4E665420C14BE100D79B4A /* TableViewController.h */,
+				3C4E665520C14BE100D79B4A /* TableViewController.m */,
 			);
 			path = Test_MPVideoCutView;
 			sourceTree = "<group>";
@@ -135,6 +127,8 @@
 		3CE4D67520BF84640038ED71 /* YXVSPhotoPicker */ = {
 			isa = PBXGroup;
 			children = (
+				3CE4D68E20BFED4A0038ED71 /* tool */,
+				3CE4D68D20BFED2D0038ED71 /* controller */,
 				3CE4D67620BF84790038ED71 /* view */,
 			);
 			path = YXVSPhotoPicker;
@@ -155,6 +149,28 @@
 				3CE4D68920BFD6060038ED71 /* YXVSPhotoPickerTopSwitchView.m */,
 			);
 			path = view;
+			sourceTree = "<group>";
+		};
+		3CE4D68D20BFED2D0038ED71 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				3C72616520BD620200472CC4 /* YXVSEditRootViewController.h */,
+				3C72616620BD620200472CC4 /* YXVSEditRootViewController.m */,
+				3C72616D20BE53D800472CC4 /* YXVSPhotoPickerBeiginViewController.h */,
+				3C72616E20BE53D800472CC4 /* YXVSPhotoPickerBeiginViewController.m */,
+				3CE4D69220BFEEF40038ED71 /* YXVSVideoEditViewController.h */,
+				3CE4D69320BFEEF40038ED71 /* YXVSVideoEditViewController.m */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		3CE4D68E20BFED4A0038ED71 /* tool */ = {
+			isa = PBXGroup;
+			children = (
+				3CE4D67220BEA5600038ED71 /* YXVSPhotoAlbumManager.h */,
+				3CE4D67320BEA5600038ED71 /* YXVSPhotoAlbumManager.m */,
+			);
+			path = tool;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,14 +244,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3C72615C20BC02FD00472CC4 /* TestViewController.m in Sources */,
 				3CE4D68220BF99330038ED71 /* YXPhotoPickerAssetPreviewList.m in Sources */,
-				3C72616C20BE53C500472CC4 /* YXVSPhotoPickerVideoController.m in Sources */,
+				3C4E665620C14BE100D79B4A /* TableViewController.m in Sources */,
 				3CE4D67420BEA5600038ED71 /* YXVSPhotoAlbumManager.m in Sources */,
 				3CA1307D20B811D700CAE3C2 /* MPFCaptureShangChuanVideoMeiHuaCaiJianView.m in Sources */,
 				3C72616720BD620200472CC4 /* YXVSEditRootViewController.m in Sources */,
 				3CA1306A20B811A500CAE3C2 /* ViewController.m in Sources */,
 				3CA1307520B811A700CAE3C2 /* main.m in Sources */,
+				3CE4D69420BFEEF40038ED71 /* YXVSVideoEditViewController.m in Sources */,
 				3CE4D67C20BF8A370038ED71 /* YXVSPhotoPickerGroupListCell.m in Sources */,
 				3C72616420BCFFF000472CC4 /* YXVSCaptureVideoViewContainer.m in Sources */,
 				3CE4D67920BF89610038ED71 /* YXVSPhotoPickerGroupList.m in Sources */,

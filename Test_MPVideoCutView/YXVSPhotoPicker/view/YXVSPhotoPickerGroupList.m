@@ -39,26 +39,18 @@ CGFloat static YXVSPhotoPickerTableViewCellHeight = 80;
 - (void)showWithView:(UIView *)view{
     __weak __typeof(self) weakSelf = self;
     self.hidden = NO;
-    view.hidden = NO;
-    view.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.2];
     [UIView animateWithDuration:0.3 delay:0 usingSpringWithDamping:0.7 initialSpringVelocity:1.0 options:UIViewAnimationOptionCurveLinear animations:^{
         __strong __typeof(self) strongSelf = weakSelf;
-        view.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.8];
         strongSelf.frame = _originalFrame;
-    } completion:^(BOOL finished) {
-
-    }];
+    } completion:^(BOOL finished) {}];
 }
 
 - (void)dismissWithView:(UIView *)view{
     __weak __typeof(self) weakSelf = self;
-    view.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.75];
     [UIView animateWithDuration:0.5 delay:0 usingSpringWithDamping:1.0 initialSpringVelocity:1.0 options:UIViewAnimationOptionCurveLinear animations:^{
         __strong __typeof(self) strongSelf = weakSelf;
         strongSelf.frame = [strongSelf _hideFrame];
-        view.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0];
     } completion:^(BOOL finished) {
-        view.hidden = YES;
         self.hidden = YES;
     }];
     

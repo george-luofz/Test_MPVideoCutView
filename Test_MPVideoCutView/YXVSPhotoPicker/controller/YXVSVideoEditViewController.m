@@ -1,46 +1,47 @@
 //
-//  TestViewController.m
+//  YXVSVideoEditViewController.m
 //  Test_MPVideoCutView
 //
-//  Created by 罗富中 on 2018/5/28.
+//  Created by 罗富中 on 2018/5/31.
 //  Copyright © 2018年 George_luofz. All rights reserved.
 //
 
-#import "TestViewController.h"
+#import "YXVSVideoEditViewController.h"
 #import "YXVSCaptureBorderRectView.h"
 #import "YXVSCaptureVideoViewContainer.h"
-@interface TestViewController () <YXVSCaptureBorderRectViewDelegate>
+@interface YXVSVideoEditViewController () <YXVSCaptureBorderRectViewDelegate>
 {
     UIScrollView *_scollView;
 }
 @end
 
-@implementation TestViewController
+@implementation YXVSVideoEditViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.view.backgroundColor = [UIColor whiteColor];
     // Do any additional setup after loading the view.
     
-//    YXVSCaptureBorderRectView *view = [[YXVSCaptureBorderRectView alloc] initWithVideoDuration:5];
-//    view.backgroundColor = [UIColor whiteColor];
-//    view.longPressDelegate = self;
-////    [self.view addSubview:view];
-//
-//    UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 64, self.view.frame.size.width, 66)];
-//    scrollView.contentSize = CGSizeMake(1000, 66);
-//    scrollView.backgroundColor = [UIColor yellowColor];
-//    [scrollView addSubview:view];
-//    [self.view addSubview:scrollView];
-//    _scollView = scrollView;
-//
-//    [view setUpForLayout];
-//    //
-//    for(int  i = 0 ;i < 5; i++){
-//        UIImage *image = [UIImage imageNamed:@"1111"];
-//        [view addImage:image atIndex:i];
-////        UIImageView *imageView = [self addImage:image atIndex:i];
-////        [scrollView addSubview:imageView];
-//    }
+    //    YXVSCaptureBorderRectView *view = [[YXVSCaptureBorderRectView alloc] initWithVideoDuration:5];
+    //    view.backgroundColor = [UIColor whiteColor];
+    //    view.longPressDelegate = self;
+    ////    [self.view addSubview:view];
+    //
+    //    UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 64, self.view.frame.size.width, 66)];
+    //    scrollView.contentSize = CGSizeMake(1000, 66);
+    //    scrollView.backgroundColor = [UIColor yellowColor];
+    //    [scrollView addSubview:view];
+    //    [self.view addSubview:scrollView];
+    //    _scollView = scrollView;
+    //
+    //    [view setUpForLayout];
+    //    //
+    //    for(int  i = 0 ;i < 5; i++){
+    //        UIImage *image = [UIImage imageNamed:@"1111"];
+    //        [view addImage:image atIndex:i];
+    ////        UIImageView *imageView = [self addImage:image atIndex:i];
+    ////        [scrollView addSubview:imageView];
+    //    }
     
     YXVSCaptureVideoViewContainer *viewContainer = [[YXVSCaptureVideoViewContainer alloc] initWithFrame:CGRectMake(0, 64, self.view.frame.size.width, 66)];
     viewContainer.backgroundColor = [UIColor lightGrayColor];

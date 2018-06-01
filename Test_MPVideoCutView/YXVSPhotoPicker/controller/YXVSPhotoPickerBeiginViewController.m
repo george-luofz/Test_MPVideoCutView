@@ -16,7 +16,6 @@
     YXVSPhotoPickerGroupList        *_groupList;
     YXPhotoPickerAssetPreviewList   *_previewList;
     YXVSPhotoPickerTopSwitchView    *_switchView;
-    UIView                          *_shadeView;
     
     YXVSPhotoAlbumManager           *_photoManager;
     
@@ -33,9 +32,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
+    self.view.backgroundColor = [UIColor whiteColor];
     [self _addSubviews];
-//    [self _buildAllVideoData];
     [self _buildGroupData];
 }
 #pragma mark -- views
@@ -46,16 +44,11 @@
 }
 
 - (void)_addGroupList{
-    
-    UIView *shadeView = [[UIView alloc] initWithFrame:self.view.frame];
-    [self.view addSubview:shadeView];
-    _shadeView = shadeView;
-    
     _groupList = [[YXVSPhotoPickerGroupList alloc] initWithFrame:[self _selfSafeContentFrame]];
     _groupList.delegate = self;
     [self.view addSubview:_groupList];
-//    _groupList.hidden = YES;
-    [_groupList dismissWithView:_shadeView];
+    _groupList.hidden = YES;
+    [_groupList dismissWithView:nil];
 }
 
 - (void)_addPreviewList{
@@ -69,9 +62,9 @@
     YXVSPhotoPickerTopSwitchView *swithView = [[YXVSPhotoPickerTopSwitchView alloc] initWithFrame:CGRectMake(0, 0, 200, 44)];
     [swithView addClickHandler:^(BOOL isSelected) {
         if(isSelected){
-            [_groupList showWithView:_shadeView];
+            [_groupList showWithView:nil];
         }else{
-            [_groupList dismissWithView:_shadeView];
+            [_groupList dismissWithView:nil];
         }
     }];
     self.navigationItem.titleView = swithView;
@@ -108,7 +101,6 @@
         }
     }];
 }
-
 
 #pragma mark -- group list delegate
 - (void)YXVSPhotoPickerGroupList:(YXVSPhotoPickerGroupList *)groupList selectAtIndex:(NSInteger)index{
